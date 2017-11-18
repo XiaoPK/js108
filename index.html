@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>My test</title>
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--write your code here-->
+        <!-- Button trigger modal -->
+        <div class="container-fluid">
+            <h1>统一建模语言理论测试</h1>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <p>考试科目：统一建模语言</p>
+                    <p>班级：<input type="text"></p>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <p>时间：100分钟</p>
+                    <p>学号：<input type="text"></p>
+                </div>
+                <div class="col-xs-6 col-sm-3" id = "allscores">
+                    <p>得分：</p>
+                    <p>姓名：<input type="text"></p>
+                </div>
+            </div>
+        </div>
+        <h2>一、填空题（每空5分，共20分）</h2>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>1.UML的中文全称是：<input type="text" id="11"></p>
+                </div>
+                <div class="col-sm-12">
+                    <p>2.对象最突出的特征是：<input type= "text" id="121"> <input type= "text" id="122"> <input type= "text" id="123"></p>
+                </div>
+            </div>
+            </div>
+        <h2>二、选择题（每题10分，共20分）</h2>
+        <div class="container-fluid">
+           <div class="row">
+               <form>
+                   <div class="col-xs-12 col-sm-12">
+                       <p>1.UML与软件工程的关系是：</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="21" value="A">(A)UML就是软件工程</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="21" value="B">(B)UML参与到软件工程中软件开发的几个阶段</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="21" value="C">(C)UML与软件工程无关</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="21" value="D">(D)UML是软件工程的一部分</p>
+                   </div>
+                   <div class="col-xs-12 col-sm-12">
+                       <p>2.Java语言支持：</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="22" value="A">(A)单继承</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="22" value="B">(B)多继承</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="22" value="C">(C)单继承和多继承都支持</p>
+                       <p class="col-xs-12 col-sm-12"><input type="radio" name="22" value="D">(D)单继承和多继承都不支持</p>
+                   </div>
+               </form>
+           </div>
+        </div>
+        <h2>三、多择题（每题10分，共20分）</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <form>
+                    <div class="col-xs-12 col-sm-12">
+                        <p>1.用例的粒度分为以下哪三种：</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="31" value="A">(A)概述级</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="31" value="B">(B)需求级</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="31" value="C">(C)用户目标级</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="31" value="D">(D)子功能级</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12">
+                        <p>2.类图由以下哪三部分构成：</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="32" value="A">(A)名称</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="32" value="B">(B)属性</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="32" value="C">(C)操作</p>
+                        <p class="col-xs-12 col-sm-12"><input type="checkbox" name="32" value="D">(D)方法</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h2>四、判断题（每题10分，共20分）</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <p>1.用例图只是用于和客户交流和沟通的，用于确定需求。
+                        <input type="radio" name="41" value="√">√
+                        <input type="radio" name="41" value="×">×
+                    </p>
+                    <p>2.在状态图中，终止状态在一个状态图中允许有任意多个。
+                        <input type="radio" name="42" value="√">√
+                        <input type="radio" name="42" value="×">×
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2>五、简答题（每题20分，共20分）</h2>
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class="col-xs-12 col-sm-12">
+                    <p>1.简述什么是模型以及模型的表现形式？</p>
+                    <p><textarea name="name" rows = "10" cols = "75" id="51"></textarea></p>
+                </div>
+            </div>
+        </div>
+        <button type="submit" onclick="sumbit()">计算分数</button>
+        <br/>
+    </body>
+<script type="text/javascript" src="sumbit.js">
+</script>
+</html>
